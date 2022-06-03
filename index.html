@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Documentacion Tecnica</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <header id="header-nav">Documentación HTML</header>
+        <ul id="ul-nav">
+            <li id="li-nav"><a class="nav-link" href="#Introduccion">Introducción</a></li>
+            <li id="li-nav"><a class="nav-link" href="#HTML">HTML</a></li>
+            <li id="li-nav"><a class="nav-link" href="#Imagenes">Imágenes</a></li>
+            <li id="li-nav"><a class="nav-link" href="#Texto">Texto</a></li>
+            <li id="li-nav"><a class="nav-link" href="#Vinculos">Vínculos</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+            <header>Introducción</header>
+            <article>
+                <p>HTML es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).</p>
+
+            </article>
+        </section>
+        <section class="main-section" id="HTML">
+            <header>HTML</header>
+            <article>
+                <p>HTML no es un lenguaje de programación; es un lenguaje de marcado que define la estructura de tu contenido. HTML consiste en una serie de elementos que usarás para encerrar diferentes partes del contenido para que se vean o comporten de una determinada manera. Las etiquetas de encierre pueden hacer de una palabra o una imagen un hipervínculo a otro sitio, se pueden cambiar palabras a cursiva, agrandar o achicar la letra, etc.</p>
+                <h4>Anatomía de un elemento HTML</h4>
+                <p>Las partes principales del elemento son:</p>
+                <ol>
+                    <li>La etiqueta de apertura: consiste en el nombre del elemento, encerrado por paréntesis angulares (&lt; &gt;) de apertura y cierre. Establece dónde comienza o empieza a tener efecto el elemento.</li>
+                    <li>La etiqueta de cierre: es igual que la etiqueta de apertura, excepto que incluye una barra de cierre (/) antes del nombre de la etiqueta. Establece dónde termina el elemento.</li>
+                    <li>El contenido: este es el contenido del elemento.</li>
+                    <li>El elemento: la etiqueta de apertura, más la etiqueta de cierre, más el contenido equivale al elemento.</li>
+                </ol>
+                <p>Los elementos pueden también tener atributos que contienen información adicional acerca del elemento, la cual no quieres que aparezca en el contenido real del elemento.</p>
+                <p>Los atributos siempre se incluyen en la etiqueta de apertura de un elemento, nunca en la de cierre.</p>
+                <p>Un atributo debe tener siempre:</p>
+                <ol>
+                    <li>Un espacio entre este y el nombre del elemento (o del atributo previo, si el elemento ya posee uno o más atributos).</li>
+                    <li>El nombre del atributo, seguido por un signo de igual (=).</li>
+                    <li>Comillas de apertura y de cierre, encerrando el valor del atributo.</li>
+                </ol>
+                <h4>Anidar elementos</h4>
+                <p>Podes también colocar elementos dentro de otros elementos (esto se llama anidamiento).</p>
+                <p><code>&lt;p&gt;Esta es mi primer &lt;strong&gt; pagina web &lt;/strong&gt;&lt;/p&gt;</code> (En este ejemplo la etiqueta &lt;strong&gt; sirve para poner la letra en negrita)</p>
+                <p>Los elementos deben abrirse y cerrarse ordenadamente, de forma tal que se encuentren claramente dentro o fuera el uno del otro.</p>
+                <h4>Anatomía de un documento HTML</h4>
+                <p>Estas son las etiquetas que componen la estructura básica de un archivo html:</p>
+                <ul>
+                    <li>
+                        <code>&lt;!DOCTYPE html&gt;</code>
+                        (el tipo de documento): Es un preámbulo requerido para que todo funcione correctamente.
+                    </li>
+                    <li>
+                        <code>&lt;html&gt;&lt;/html&gt;</code>
+                        : Este elemento encierra todo el contenido de la página entera (se le conoce como el elemento raíz).
+                    </li>
+                    <li>
+                        <code>&lt;head&gt;&lt;/head&gt;</code>
+                        : Este elemento actúa como un contenedor de todo aquello que quieres incluir en la página HTML que no es contenido visible por los visitantes de la página. Incluye cosas como palabras clave, una descripción de la página que quieres que aparezca en resultados de búsquedas, código CSS para dar estilo al contenido, etc.
+                    </li>
+                    <li>
+                        <code>&lt;meta charset="utf-8"&gt;</code>
+                        : Este elemento establece el juego de caracteres que tu documento usará en utf-8, que incluye casi todos los caracteres de todos los idiomas humanos. Básicamente, puede manejar cualquier contenido de texto que puedas incluir. No hay razón para no establecerlo, y puede evitar problemas en el futuro.
+                    </li>
+                    <li>
+                        <code>&lt;tittle&gt;&lt;/tittle&gt;</code>
+                        : Establece el título de tu página, que es el título que aparece en la pestaña o en la barra de título del navegador cuando la página es cargada, y se usa para describir la página cuando es añadida a los marcadores o como favorita.
+                    </li>
+                    <li>
+                        <code>&lt;body&gt;&lt;/body&gt;</code>
+                        : Encierra todo el contenido que deseas mostrar a los usuarios web que visiten tu página, ya sea texto, imágenes, videos, y demás.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Imagenes">
+            <header>Imágenes</header>
+            <article>
+                <p>Para añadir una imagen a tu html se usa la etiqueta <code>&lt;img&gt;</code>. Lo logra a través del atributo <code>src</code> (source), el cual contiene la ubicación de tu archivo de imagen.</p>
+                <p>También se incluye un atributo <code>alt</code> el cual contiene un texto que debería describir la imagen, y que podría ser accedido por usuarios que no pueden ver la imagen, por diferentes motivos (son ciegos o tienen deficiencias visuales y utilizan lectores de pantalla o se produjo algún error en el código que impide que la imagen sea cargada)</p>
+            </article>
+        </section>
+        <section class="main-section" id="Texto">
+            <header>Texto</header>
+            <article>
+                <h4>Encabezados</h4>
+                <p>Los elementos de encabezado permiten especificar que ciertas partes del contenido son titulos, o subtitulos del contenido (como si fuera un libro). HTML posee seis niveles de encabezados, aunque solo llegues a usar 3 o 4 como mucho (entre mayor sea el número que se le asigne a <code>&lt;h...&gt;</code> menor va a ser su tamaño).</p>
+                <p>Sus etiquetas son:</p>
+                <ul>
+                    <li>
+                        <code>&lt;h1&gt;Título principal&lt;/h1&gt;</code>
+                    </li>
+                    <li>
+                        <code>&lt;h2&gt;Título de nivel superior&lt;/h2&gt;</code>
+                    </li>
+                    <li>
+                        <code>&lt;h3&gt;Subtítulo/h3&lt;&gt;</code>
+                    </li>
+                    <li>
+                        <code>&lt;h4&gt;Sub-subtítulo&lt;/h4&gt;</code>
+                    </li>
+                    <li>
+                        <code>&lt;h5&gt;&lt;/h5&gt;</code>
+                    </li>
+                    <li>
+                        <code>&lt;h6&gt;&lt;/h6&gt;</code>
+                    </li>
+                </ul>
+                <h4>Parrafos</h4>
+                <p>Los elementos <code>&lt;p&gt;</code> se utilizan para encerrar párrafos de texto; se usa frecuentemente para tu contenido de texto.</p>
+                <h4>Listas</h4>
+                <p>El marcado de listas se realiza siempre en al menos dos elementos. Los dos tipos de listas más comunes son las listas ordenadas y las desordenadas:</p>
+                <ul>
+                    <li>Las listas desordenadas son aquellas en las que el orden de los items no es relevante, como en una lista de compras. Estas son encerradas en un elemento <code>&lt;ul&gt;</code> (unordered list).</li>
+                    <li>Las listas ordenadas son aquellas en las que el orden sí es relevante, como en una receta. Estas son encerradas en un elemento <code>&lt;ol&gt;</code> (ordered list).</li>
+                </ul>
+                <p>Cada elemento de la lista se coloca dentro de un elemento <code>&lt;li&gt;</code> (list item).</p>
+            </article>
+        </section>
+        <section class="main-section" id="Vinculos">
+            <header>Vínculos</header>
+            <article>
+                <p>Los vínculos o enlaces utilizan la etiqueta <code>&lt;a&gt;</code> (con su etiqueta de cierre <code>&lt;/a&gt;</code>) que es la abreviatura de la palabra "anchor" (ancla).</p>
+                    <p>Para crear un enlace se debe encerrar el texto con dicha etiqueta, darle un atributo <code>href</code> con la dirección web con la que quieras conectar al vínculo. (No olvides poner <code>https:// o http://</code> ya que podria salir algun error).</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
